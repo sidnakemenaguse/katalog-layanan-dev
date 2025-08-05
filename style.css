@@ -1,1 +1,104 @@
+:root {
+    --brand-1: #AEC098;
+    --brand-2: #7F9A8A;
+    --brand-3: #98BEC0;
+    --brand-4: #6987A9;
+    --brand-5: #E8E5E3;
+    --brand-6: #F8F8F8;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.header {
+    padding-top: 100px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#logo_kemenag {
+    width: 100px;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+.card-service {
+    background-color: #e9f0e7;
+    border: 1px solid #c8d6c1;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-service h5 {
+    font-weight: bold;
+}
+
+.card-service .btn {
+    font-size: 0.8rem;
+}
+
+.pegawai {
+    background-color: #d7e4ea;
+    border: 1px solid #9bb6c2;
+}
+
+.card-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.bg-brand-1 {
+    background-color: var(--brand-1);
+}
+
+.bg-brand-2 {
+    background-color: var(--brand-2);
+}
+
+.bg-brand-3 {
+    background-color: var(--brand-3);
+}
+
+.bg-brand-4 {
+    background-color: var(--brand-4);
+}
+
+.bg-brand-5 {
+    background-color: var(--brand-5);
+}
+
+.bg-brand-6 {
+    background-color: var(--brand-6);
+}
+
+.text-brand-1 {
+    color: var(--brand-1);
+}
+
+.text-brand-2 {
+    color: var(--brand-2);
+}
+
+.text-brand-3 {
+    color: var(--brand-3);
+}
+
+.text-brand-4 {
+    color: var(--brand-4);
+}
+
+.text-brand-5 {
+    color: var(--brand-5);
+}
+
+.text-brand-6 {
+    color: var(--brand-6);
+}
+
 /* Add styles here */
