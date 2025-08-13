@@ -260,7 +260,7 @@ function loadNav() {
   for (let i = 0; i < contentPublik.length; i++) {
     if (i === 0) {
       const button = document.createElement("button");
-      button.className = "btn btn-brand-2 w-100";
+      button.className = "btn btn-lg fs-6 text-start text-uppercase btn-brand-2 w-100";
       button.id = `l-pub-${i}`;
       button.textContent = contentPublik[i].btnText;
       button.onclick = function () {
@@ -269,7 +269,7 @@ function loadNav() {
       navList.appendChild(button);
     } else {
       const button = document.createElement("button");
-      button.className = "btn btn-outline-brand-2 w-100";
+      button.className = "btn btn-lg fs-6 text-start text-uppercase btn-outline-brand-2 w-100";
       button.id = `l-pub-${i}`;
       button.textContent = contentPublik[i].btnText;
       button.onclick = function () {
@@ -287,7 +287,7 @@ function loadNavPegawai() {
   for (let i = 0; i < contentPegawai.length; i++) {
     if (i === 0) {
       const button = document.createElement("button");
-      button.className = "btn btn-brand-2 w-100";
+      button.className = "btn btn-lg fs-6 text-start text-uppercase btn-brand-2 w-100";
       button.id = `l-peg-${i}`;
       button.textContent = contentPegawai[i].btnText;
       button.onclick = function () {
@@ -296,7 +296,7 @@ function loadNavPegawai() {
       navList.appendChild(button);
     } else {
       const button = document.createElement("button");
-      button.className = "btn btn-outline-brand-2 w-100";
+      button.className = "btn btn-lg fs-6 text-start text-uppercase btn-outline-brand-2 w-100";
       button.id = `l-peg-${i}`;
       button.textContent = contentPegawai[i].btnText;
       button.onclick = function () {
@@ -436,7 +436,7 @@ function updateNavList(navId, items, type) {
   navList.innerHTML = "";
   items.forEach((item, i) => {
     const button = document.createElement("button");
-    button.className = i === 0 ? "btn btn-brand-2 w-100" : "btn btn-outline-brand-2 w-100";
+    button.className = i === 0 ? "btn btn-lg fs-6 text-start text-uppercase btn-brand-2 w-100" : "btn btn-lg fs-6 text-start text-uppercase btn-outline-brand-2 w-100";
     button.id = `l-${type}-${item.id}`;
     button.textContent = item.btnText;
     button.onclick = function () {
