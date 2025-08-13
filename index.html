@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
+  <title>Katalog Layanan - Kanwil Kemenag DKI Jakarta</title>
   <link href='/style.css' rel='stylesheet'>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
@@ -12,163 +12,212 @@
 </head>
 
 <body>
+  <!-- Header -->
+  <header class="header d-flex flex-column align-items-center justify-content-center py-5">
+    <img src="/assets/logo_kemenag.png" alt="logo Kemenag" id="logo_kemenag" />
+    <h2 class="section-title">Katalog Layanan<br>Kanwil Kemenag DKI Jakarta</h2>
+  </header>
 
-  <div class="container">
-    <!-- Header -->
-    <div class="header">
-      <img src="/assets/logo_kemenag.png" alt="logo Kemenag" id="logo_kemenag" />
-      <h2 class="section-title">Katalog Layanan<br>Kanwil Kemenag DKI Jakarta</h2>
-    </div>
-
-    <!-- Layanan Publik -->
-    <h3 class="section-title mb-3">Layanan Publik</h3>
-    <hr>
-    <div class="row">
-      <div class="col-xl-4">
-        <div class="card mb-3">
-          <div class="card-body bg-brand-1">
-            <h5 class="card-title">DUMAS Kanwil Kemenag DKI Jakarta</h5>
-            <div class="d-flex gap-2">
-              <div class="card-icon bg-brand-2 rounded text-white d-flex justify-content-center align-items-center">
-                <i class="bi bi-pen"></i>
+  <div class="container-fluid px-4" id="main-content">
+    <ul class="nav nav-tabs">
+      <li class="nav-item w-50 text-center">
+        <a class="nav-link text-black active font-bold" aria-current="page" onclick="changeMainTab(1)" id="tab-1"
+          href="#main-content">layanan publik</a>
+      </li>
+      <li class="nav-item w-50 text-center">
+        <a class="nav-link text-black " aria-current="page" onclick="changeMainTab(2)" id="tab-2" href="#main-content">layanan
+          pegawai</a>
+      </li>
+    </ul>
+    <div id="l-1">
+      <div class="row mt-8 p-4">
+        <div class="col-4">
+          <div class="card">
+            <div class="card-body d-flex flex-column gap-2">
+              <div class="input-group">
+                <input type="text" placeholder="Search" class="form-control" id="search-input">
+                <span class="input-group-text p-0">
+                  <button class="btn btn-sm"><i class="bi bi-search" id="search-icon"></i></button>
+                </span>
               </div>
-              <p class="card-text">Platform untuk pengaduan ASN dan pelayanan publik</p>
+              <div class="d-flex flex-column gap-2" id="nav-list"
+                style="max-height: 40vh;  overflow: hidden; overflow-y: scroll;">
+              </div>
             </div>
-            <button class="btn btn-success btn-sm">Buka</button>
-            <hr>
-            <p><strong>Alur Layanan:</strong></p>
-            <ol>
-              <li>Masuk ke link dumas</li>
-              <li>Klik tombol "submit"</li>
-            </ol>
-            <p><strong>Dokumen Persyaratan:</strong> -</p>
-            <p><strong>Waktu Layanan:</strong> -</p>
-            <p><strong>Penanggung Jawab:</strong> -</p>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="card mb-3" id="c-pub-1">
+                <div class="card-body rounded shadow">
+                  <h5 class="card-title" id="card-title">DUMAS Kanwil Kemenag DKI Jakarta</h5>
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <div class="d-flex gap-2 mb-2">
+                        <p class="card-text" id="card-text">Platform untuk pengaduan ASN dan pelayanan publik</p>
+                      </div>
+                      <div class="d-flex gap-2">
+                        <button class="btn btn-brand-2"> <i class="bi bi-globe me-1"></i> Buka</button>
+                        <button class="btn btn-outline-brand-2"> <i class="bi bi-printer me-1"></i> Print Dokumen
+                          Persyaratan</button>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Alur Layanan:
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body" id="alur-layanan">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Dokumen Persyaratan: </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body" id="dokumen-persyaratan">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Waktu Layanan: </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body" id="waktu-layanan">
+                          <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the
+                          collapse plugin adds the appropriate classes that we use to style each element. These classes
+                          control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                          modify any of this with custom CSS or overriding our default variables. It’s also worth noting
+                          that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                          does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseFourth" aria-expanded="false" aria-controls="collapseFourth">
+                          Penanggung Jawab: </button>
+                      </h2>
+                      <div id="collapseFourth" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body" id="penanggung-jawab">
+                          <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the
+                          collapse plugin adds the appropriate classes that we use to style each element. These classes
+                          control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                          modify any of this with custom CSS or overriding our default variables. It’s also worth noting
+                          that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                          does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </div>
 
-
-      <div class="col-xl-4">
-        <div class="card-service">
-          <h5>PPID Kanwil Kemenag DKI Jakarta</h5>
-          <p>Permohonan informasi publik</p>
-          <button class="btn btn-success btn-sm">Buka</button>
-          <hr>
-          <p><strong>Alur Layanan:</strong></p>
-          <ol>
-            <li>Isi form</li>
-            <li>PPID merespon dalam 14 hari</li>
-          </ol>
-          <p><strong>Dokumen Persyaratan:</strong> -</p>
-          <p><strong>Waktu Layanan:</strong> Maks 14 hari</p>
-          <p><strong>Penanggung Jawab:</strong> -</p>
+    <div id="l-2" class="d-none">
+      <div class="row mt-8 p-4">
+        <div class="col-4">
+          <div class="card">
+            <div class="card-body d-flex flex-column gap-2">
+              <div class="input-group">
+                <input type="text" placeholder="Search" class="form-control" id="search-input-pegawai">
+                <i class="bi bi-search input-group-text" id="search-icon-pegawai"></i>
+              </div>
+              <div class="d-flex flex-column gap-2" id="nav-list-pegawai"
+                style="max-height: 40vh;  overflow: hidden; overflow-y: scroll;">
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div class="col-xl-4">
-        <div class="card-service">
-          <h5>Website Kanwil Kemenag DKI</h5>
-          <p>Halaman utama instansi</p>
-          <button class="btn btn-success btn-sm">Buka</button>
-          <hr>
-          <p><strong>Dokumen Persyaratan:</strong> -</p>
-          <p><strong>Waktu Layanan:</strong> -</p>
-          <p><strong>Penanggung Jawab:</strong> -</p>
+        <div class="col-8">
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="card mb-3" id="c-pub-1">
+                <div class="card-body rounded shadow">
+                  <h5 class="card-title" id="card-title-pegawai"></h5>
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <div class="d-flex gap-2 mb-2">
+                        <p class="card-text" id="card-text-pegawai"></p>
+                      </div>
+                      <div class="d-flex gap-2">
+                        <button class="btn btn-brand-2"> <i class="bi bi-globe me-1"></i> Buka</button>
+                        <button class="btn btn-outline-brand-2"> <i class="bi bi-printer me-1"></i> Print Dokumen
+                          Persyaratan</button>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Alur Layanan:
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body" id="alur-layanan-pegawai">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Dokumen Persyaratan: </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body" id="dokumen-persyaratan-pegawai">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Waktu Layanan: </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body" id="waktu-layanan-pegawai">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseFourth" aria-expanded="false" aria-controls="collapseFourth">
+                          Penanggung Jawab: </button>
+                      </h2>
+                      <div id="collapseFourth" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body" id="penanggung-jawab-pegawai">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Layanan Perizinan -->
-  <div class="row">
-    <div class="col-xl-4">
-      <div class="card-service">
-        <h5>Izin Belajar Ke Luar Negeri</h5>
-        <p>Pengantar rekomendasi studi lanjut</p>
-        <hr>
-        <p><strong>Alur Layanan:</strong> Pemohon mengajukan ke PTSP</p>
-        <p><strong>Dokumen Persyaratan:</strong> Surat permohonan, surat rekomendasi</p>
-        <p><strong>Waktu Layanan:</strong> -</p>
-        <p><strong>Penanggung Jawab:</strong> -</p>
-      </div>
-    </div>
-
-    <div class="col-xl-4">
-      <div class="card-service">
-        <h5>Izin Magang di Kanwil</h5>
-        <p>Surat permohonan magang</p>
-        <hr>
-        <p><strong>Alur Layanan:</strong> Kirim surat ke bagian umum</p>
-        <p><strong>Dokumen Persyaratan:</strong> Surat permohonan</p>
-        <p><strong>Waktu Layanan:</strong> -</p>
-        <p><strong>Penanggung Jawab:</strong> -</p>
-      </div>
-    </div>
-
-    <div class="col-xl-4">
-      <div class="card-service">
-        <h5>Izin Penelitian di Kanwil</h5>
-        <p>Surat permohonan observasi</p>
-        <button class="btn btn-success btn-sm">Buka</button>
-        <hr>
-        <p><strong>Alur Layanan:</strong> Surat disampaikan ke umum</p>
-        <p><strong>Dokumen Persyaratan:</strong> Surat permohonan penelitian</p>
-        <p><strong>Waktu Layanan:</strong> -</p>
-        <p><strong>Penanggung Jawab:</strong> -</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Layanan Pegawai -->
-  <div class="section-title">Layanan Pegawai</div>
-  <div class="row">
-    <div class="col-xl-4">
-      <div class="card-service pegawai">
-        <h5>SIKAP</h5>
-        <p>Aplikasi kehadiran pegawai</p>
-        <button class="btn btn-primary btn-sm">Buka</button>
-        <hr>
-        <p><strong>Alur Layanan:</strong> Login, rekap, absensi</p>
-        <p><strong>Dokumen Persyaratan:</strong> -</p>
-        <p><strong>Waktu Layanan:</strong> Harian</p>
-        <p><strong>Penanggung Jawab:</strong> -</p>
-      </div>
-    </div>
-
-    <div class="col-xl-4">
-      <div class="card-service pegawai">
-        <h5>SIMPEG</h5>
-        <p>Data kepegawaian ASN</p>
-        <button class="btn btn-primary btn-sm">Buka</button>
-        <hr>
-        <p><strong>Dokumen Persyaratan:</strong> -</p>
-        <p><strong>Waktu Layanan:</strong> -</p>
-        <p><strong>Penanggung Jawab:</strong> -</p>
-      </div>
-    </div>
-
-    <div class="col-xl-4">
-      <div class="card-service pegawai">
-        <h5>ABSENSI</h5>
-        <p>Rekap presensi harian</p>
-        <button class="btn btn-primary btn-sm">Buka</button>
-        <hr>
-        <p><strong>Dokumen Persyaratan:</strong> -</p>
-        <p><strong>Waktu Layanan:</strong> Harian</p>
-        <p><strong>Penanggung Jawab:</strong> -</p>
-      </div>
-    </div>
-
-    <div class="col-xl-4">
-      <div class="card-service pegawai">
-        <h5>E-Kinerja</h5>
-        <p>Pelaporan kinerja ASN via BKN</p>
-        <button class="btn btn-primary btn-sm">Buka</button>
-        <hr>
-        <p><strong>Dokumen Persyaratan:</strong> -</p>
-        <p><strong>Waktu Layanan:</strong> Bulanan</p>
-        <p><strong>Penanggung Jawab:</strong> -</p>
       </div>
     </div>
   </div>
@@ -176,6 +225,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
