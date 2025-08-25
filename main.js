@@ -9,19 +9,20 @@ const contentPublik = [
     btnText: "DUMAS",
     context: `Pengaduan Masyarakat (DUMAS) Kanwil Kemenag DKI Jakarta adalah layanan pengaduan yang ditujukan untuk masyarakat yang ingin menyampaikan keluhan, saran, atau masukan terkait layanan publik yang diberikan oleh Kementerian Agama di wilayah DKI Jakarta.`,
     alurLayanan: [
-      "Pengguna mengakses layanan DUMAS Kanwil Kemenag DKI Jakarta.",
-      "Pengguna mengisi formulir pengaduan yang telah disediakan dengan informasi yang diperlukan.",
-      "Pengguna mengirimkan formulir pengaduan tersebut.",
+      "Pemohon menyerahkan identitas dan menyampaikan maksud permohonan melalui FO atau website DUMAS;",
+      "FO akan mengkonfirmasi Tim Dumas Kanwil;",
+      "Berkas akan diterima langsung oleh Tim Dumas, Tim Dumas mengecek persyaratan, setelah Persyaratan lengkap, Tim Dumas akan memberikan tanda terima berkas pengaduan, mengkonfirmasi alamat/nomor kontak penyampaian surat jawaban hasil tindak lanjut Dumas serta memberikan perkiraan waktu penyelesaian tindak lanjut Dumas tersebut;",
+      "Tim Dumas memberikan informasi terkait surat jawaban/hasil tindak lanjut Dumas yang akan disampaikan;",
+      "Tim Dumas mengirimkan surat jawaban/hasil tindak lanjut Dumas melalui pos/surat elektronik ataupun menyampaikan langsung kepada pelapor melalui PTSP;",
+      "Pemohon menandatangani formulir tanda terima surat jawaban/hasil tindak lanjut Dumas;",
+      "Tim Dumas mengarsipkan tanda terima surat jawaban/hasil tindak lanjut Dumas yang telah ditandatangani pemohon, jika penyampaian hasil dilakukan melalui pos/surat elektronik, maka Tim Dumas mengarsipkan bukti pengirimannya",
     ],
-    dokumenPersyaratan: [
-      "KTP atau identitas diri lainnya",
-      "Deskripsi pengaduan yang jelas dan lengkap",
-    ],
+    dokumenPersyaratan: ["KTP atau identitas diri lainnya", "Bukti Pendukung Dumas"],
     waktuLayanan: "Layanan ini tersedia 24 jam setiap hari.",
-    penanggungJawab: "Petugas PTSP",
+    penanggungJawab: "Tim Kerja Informasi dan Humas",
     biaya: "Layanan ini tidak dikenakan biaya.",
-    kontak:
-      "Untuk informasi lebih lanjut, masyarakat dapat menghubungi petugas DUMAS melalui nomor telepon atau email yang telah disediakan di situs resmi Kanwil Kemenag DKI Jakarta.",
+    kontak: "",
+    link: "https://dki.kemenag.go.id/dumas/",
   },
   {
     id: 1,
@@ -29,20 +30,25 @@ const contentPublik = [
     btnText: "Informasi Publik (PPID)",
     context: `Layanan Informasi Publik (PPID) Kanwil Kemenag DKI Jakarta adalah layanan yang menyediakan akses informasi publik kepada masyarakat sesuai dengan Undang-Undang Keterbukaan Informasi Publik. Layanan ini bertujuan untuk meningkatkan transparansi dan akuntabilitas dalam penyelenggaraan pemerintahan.`,
     alurLayanan: [
-      "Pengguna mengakses layanan Informasi Publik Kanwil Kemenag DKI Jakarta.",
-      "Pengguna mengisi formulir permohonan informasi publik yang telah disediakan dengan informasi yang diperlukan.",
-      "Pengguna mengirimkan formulir permohonan informasi publik tersebut.",
-      "Petugas PPID akan memproses permohonan informasi publik dan memberikan tanggapan kepada pengguna.",
+      "Pemohon mengajukan permohonan informasi melalui meja informasi;",
+      "Petugas meja informasi meneruskan permohonan ke PPID;",
+      "PPID memberikan jawaban atas permohonan informasi dalam waktu 10 + 7 hari;",
+      "Jika pemohon puas, maka selesai;",
+      "Jika pemohon tidak puas, maka dapat mengajukan keberatan dalam waktu 30 hari melalui meja informasi;",
+      "Atasan PPID memberikan jawaban atas keberatan dalam waktu 30 hari;",
+      "Jika pemohon puas atas jawaban keberatan, maka selesai;",
+      "Jika pemohon tidak puas, maka dapat mengajukan sengketa informasi ke Komisi Informasi dalam waktu 14 hari.",
     ],
     dokumenPersyaratan: [
-      "KTP atau identitas diri lainnya",
-      "Deskripsi informasi yang dimohonkan dengan jelas dan lengkap",
+      "surat permohonan ijin penelitian resmi dari institusi yang bersangkutan",
+      "Foto copy Kartu Mahasiswa/ KTP (identitas)",
+      "Proposal penelitian yang ditandatangani dosen pembimbing.",
     ],
     waktuLayanan: "Layanan ini tersedia 24 jam setiap hari.",
     penanggungJawab: "Petugas PTSP",
     biaya: "Layanan ini tidak dikenakan biaya.",
-    kontak:
-      "Untuk informasi lebih lanjut, masyarakat dapat menghubungi petugas PPID melalui nomor telepon atau email yang telah disediakan di situs resmi Kanwil Kemenag DKI Jakarta.",
+    kontak: "",
+    link: "https://dki.kemenag.go.id/ppid/",
   },
   {
     id: 2,
@@ -50,21 +56,23 @@ const contentPublik = [
     btnText: "Izin Penelitian",
     context: `Layanan Izin Penelitian di Kanwil Kemenag DKI Jakarta adalah layanan yang memberikan izin kepada peneliti untuk melakukan penelitian di lingkungan Kementerian Agama di wilayah DKI Jakarta. Layanan ini bertujuan untuk mendukung penelitian yang berkaitan dengan kebijakan dan program Kementerian Agama.`,
     alurLayanan: [
-      "Pengguna mengakses layanan Izin Penelitian Kanwil Kemenag DKI Jakarta.",
-      "Pengguna mengisi formulir permohonan izin penelitian yang telah disediakan dengan informasi yang diperlukan.",
-      "Pengguna mengirimkan formulir permohonan izin penelitian tersebut.",
-      "Petugas akan memproses permohonan izin penelitian dan memberikan tanggapan kepada pengguna.",
+      "Pemohon membawa Surat Permohonan ke PTSP;",
+      "PTSP memberikan tanda terima bagi pemohon;",
+      "Berkas dinaikkan ke Kakanwil untuk diberikan disposisi pimpinan;",
+      "Bagian yang menerima disposisi meneliti, menelaah, dan memvalidasi apakah izin penelitian dapat diberikan atau tidak;",
+      "Apabila diizinkan, akan memberikan balasan kepada pemohon;",
+      "Surat Izin Penelitian dimintakan tanda tangan oleh Kepala Kantor Wilayah atau Pejabat yang berwenang;",
+      "Petugas akan memberikan Surat Izin Penelitian kepada pemohon.",
     ],
     dokumenPersyaratan: [
-      "KTP atau identitas diri lainnya",
-      "Deskripsi penelitian yang akan dilakukan dengan jelas dan lengkap",
-      "Proposal penelitian yang telah disetujui oleh lembaga atau institusi terkait",
+      "Membawa surat permohonan resmi dari institusi yang bersangkutan",
+      "Foto copy Kartu Pelajar/Identitas",
     ],
     waktuLayanan: "Layanan ini tersedia 24 jam setiap hari.",
     penanggungJawab: "Petugas PTSP",
     biaya: "Layanan ini tidak dikenakan biaya.",
-    kontak:
-      "Untuk informasi lebih lanjut, masyarakat dapat menghubungi petugas Izin Penelitian melalui nomor telepon atau email yang telah disediakan di situs resmi Kanwil Kemenag DKI Jakarta.",
+    kontak: "",
+    link: "https://dki.kemenag.go.id/ptsp/",
   },
   {
     id: 3,
@@ -85,8 +93,8 @@ const contentPublik = [
     waktuLayanan: "Layanan ini tersedia 24 jam setiap hari.",
     penanggungJawab: "Petugas PTSP",
     biaya: "Layanan ini tidak dikenakan biaya.",
-    kontak:
-      "Untuk informasi lebih lanjut, masyarakat dapat menghubungi petugas Izin Magang melalui nomor telepon atau email yang telah disediakan di situs resmi Kanwil Kemenag DKI Jakarta.",
+    kontak: "",
+    link: "https://dki.kemenag.go.id/ptsp/",
   },
   {
     id: 4,
@@ -104,8 +112,8 @@ const contentPublik = [
     waktuLayanan: "Website ini tersedia 24 jam setiap hari.",
     penanggungJawab: "Petugas PTSP",
     biaya: "Layanan ini tidak dikenakan biaya.",
-    kontak:
-      "Untuk informasi lebih lanjut, masyarakat dapat menghubungi petugas melalui nomor telepon atau email yang telah disediakan di website resmi Kanwil Kemenag DKI Jakarta.",
+    kontak: "",
+    link: "https://dki.kemenag.go.id/",
   },
 ];
 
@@ -129,8 +137,8 @@ const contentPegawai = [
     waktuLayanan: "Sistem ini tersedia 24 jam setiap hari.",
     penanggungJawab: "Bagian Tata Usaha - Tim Fungsi Kepegawaian",
     biaya: "Layanan ini tidak dikenakan biaya.",
-    kontak:
-      "Untuk informasi lebih lanjut, pegawai dapat menghubungi petugas SIMPEG melalui nomor telepon atau email yang telah disediakan di situs resmi Kanwil Kemenag DKI Jakarta.",
+    kontak: "",
+    link: "https://simpeg5.kemenag.go.id/",
   },
   {
     id: 1,
@@ -151,8 +159,8 @@ const contentPegawai = [
     waktuLayanan: "Sistem ini tersedia 24 jam setiap hari.",
     penanggungJawab: "Bagian Tata Usaha - Tim Fungsi Kepegawaian",
     biaya: "Layanan ini tidak dikenakan biaya.",
-    kontak:
-      "Untuk informasi lebih lanjut, pegawai dapat menghubungi petugas Absensi Kemenag melalui nomor telepon atau email yang telah disediakan di situs resmi Kanwil Kemenag DKI Jakarta.",
+    kontak: "",
+    link: "http://absensi.kemenag.go.id/",
   },
   {
     id: 2,
@@ -167,6 +175,7 @@ const contentPegawai = [
     penanggungJawab: "Bagian Tata Usaha - Tim Fungsi Kepegawaian",
     biaya: "Layanan ini tidak dikenakan biaya.",
     kontak: "",
+    link: "http://sikap.kanwilkemenagprovdki.id:82/login",
   },
 ];
 
@@ -179,6 +188,12 @@ function loadCard(id) {
   const cardText = document.getElementById("card-text");
   if (cardText) {
     cardText.textContent = contentPublik[id].context;
+  }
+
+  const btnLink = document.getElementById("btn_link");
+  if (btnLink) {
+    btnLink.href = contentPublik[id].link;
+    btnLink.target = "_blank";
   }
 
   const alurLayanan = document.getElementById("alur-layanan");
@@ -221,6 +236,12 @@ function loadCardPegawai(id) {
   const cardText = document.getElementById("card-text-pegawai");
   if (cardText) {
     cardText.textContent = contentPegawai[id].context;
+  }
+
+  const btnLink = document.getElementById("btn_link");
+  if (btnLink) {
+    btnLink.href = contentPegawai[id].link;
+    btnLink.target = "_blank";
   }
 
   const alurLayanan = document.getElementById("alur-layanan-pegawai");
@@ -436,7 +457,10 @@ function updateNavList(navId, items, type) {
   navList.innerHTML = "";
   items.forEach((item, i) => {
     const button = document.createElement("button");
-    button.className = i === 0 ? "btn btn-lg fs-6 text-start text-uppercase btn-brand-2 w-100" : "btn btn-lg fs-6 text-start text-uppercase btn-outline-brand-2 w-100";
+    button.className =
+      i === 0
+        ? "btn btn-lg fs-6 text-start text-uppercase btn-brand-2 w-100"
+        : "btn btn-lg fs-6 text-start text-uppercase btn-outline-brand-2 w-100";
     button.id = `l-${type}-${item.id}`;
     button.textContent = item.btnText;
     button.onclick = function () {

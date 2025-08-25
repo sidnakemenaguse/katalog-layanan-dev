@@ -1,1 +1,2 @@
-A simple HTML/JS/CSS starter template
+[] hapus bagian biaya, ganti dengan keterangan semua layanan tidak dikenakan biaya
+[] tambah link setiap layanan
