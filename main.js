@@ -238,7 +238,7 @@ function loadCardPegawai(id) {
     cardText.textContent = contentPegawai[id].context;
   }
 
-  const btnLink = document.getElementById("btn_link");
+  const btnLink = document.getElementById("btn_link_pegawai");
   if (btnLink) {
     btnLink.href = contentPegawai[id].link;
     btnLink.target = "_blank";
